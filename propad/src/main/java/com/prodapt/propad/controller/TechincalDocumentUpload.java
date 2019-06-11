@@ -302,7 +302,7 @@ PropadEmpTechDetails returnrecord=null;
     }
     return this.empTech.save(returnrecord);
     }
-	@RequestMapping(value = "/upload-tech-camera", method = RequestMethod.POST)
+	@RequestMapping(value = "/upload-tech-camera", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
 	public PropadEmpTechDetails uploaddocumentcamera( @RequestBody EmpTechDTO emptech) {
 //		System.out.println("test"+file.getOriginalFilename());
 //		System.out.println(file.getBytes());
@@ -359,7 +359,7 @@ PropadEmpTechDetails returnrecord=null;
         pet.setEt_tech_comments(emptech.getEt_tech_comments());
 		return this.empTech.save(pet) ;
 	}
-	@RequestMapping(value = "/update-tech-camera", method = RequestMethod.POST)
+	@RequestMapping(value = "/update-tech-camera", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
 	public PropadEmpTechDetails updatedocumentcamera( @RequestBody EmpTechDTO emptech) {
 		System.out.println("hiii from function");
 		/////////////////updated details////////////////

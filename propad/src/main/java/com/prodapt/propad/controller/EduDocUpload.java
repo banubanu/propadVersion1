@@ -272,7 +272,7 @@ public class EduDocUpload {
 	return this.empEdu.save(returnrecord);
 	}
 
-	@RequestMapping(value = "/upload-edu-camera", method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+	@RequestMapping(value = "/upload-edu-camera", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public PropadEmpEduDetails uploadedudocumentcamera( @RequestBody EmployeeEduDTO empEdu) {
 //		System.out.println("banu"+file.getOriginalFilename());
 //		System.out.println(file.getBytes());
@@ -321,8 +321,8 @@ public class EduDocUpload {
 
 		return this.empEdu.save(pee) ;
 	}
-	@RequestMapping(value = "/update-edu-camera", method = RequestMethod.POST)
-	public PropadEmpEduDetails updatedocumentcamera( @RequestPart(required = false) Map<String, String> json,EmployeeEduDTO empEdu, @RequestParam(required = false) MultipartFile file, @RequestParam(required = false) MultipartFile file1,@RequestParam(required = false) MultipartFile file2,@RequestParam(required = false) MultipartFile file3,@RequestParam(required = false) MultipartFile file4, @RequestParam(required = false) MultipartFile file5) throws IOException, SerialException, SQLException {
+	@RequestMapping(value = "/update-edu-camera", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public PropadEmpEduDetails updatedocumentcamera( @RequestBody EmployeeEduDTO empEdu) {
 			System.out.println("hiii from function");
 		/////////////////updated details////////////////
 	PropadEmpEduDetails pee3 = new PropadEmpEduDetails();

@@ -320,7 +320,7 @@ return this.empProf.save(returnrecord);
 	return this.empProf.save(returnrecord);
 	}
 	
-	@RequestMapping(value = "/upload-prof-camera", method = RequestMethod.POST)
+	@RequestMapping(value = "/upload-prof-camera", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
 	public PropadEmpProfDetails uploaddocumentcamera( @RequestBody EmployeeProfDTO empProf){
 		PropadEmpProfDetails ppd = new PropadEmpProfDetails();
 		System.out.println("hiii from object");
