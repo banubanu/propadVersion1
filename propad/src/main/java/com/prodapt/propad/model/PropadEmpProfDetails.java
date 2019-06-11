@@ -17,14 +17,7 @@ public class PropadEmpProfDetails {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int ep_id;
-	private String camera_file;
-public String getCamera_file() {
-		return camera_file;
-	}
-	public void setCamera_file(String camera_file) {
-		this.camera_file = camera_file;
-	}
-	//	private int ep_emp_id;
+private int ep_emp_id;
 	private int ie_id;
 	private byte[] ep_service_cert1;
 	private String ep_service_cert1_text;
@@ -184,7 +177,7 @@ public String getCamera_file() {
 	}
 	@Override
 	public String toString() {
-		return "PropadEmpProfDetails [ep_id=" + ep_id + ", camera_file=" + camera_file + ", ie_id=" + ie_id
+		return "PropadEmpProfDetails [ep_id=" + ep_id + ", ie_id=" + ie_id
 				+ ", ep_service_cert1=" + Arrays.toString(ep_service_cert1) + ", ep_service_cert1_text="
 				+ ep_service_cert1_text + ", ep_service_cert2=" + Arrays.toString(ep_service_cert2)
 				+ ", ep_service_cert2_text=" + ep_service_cert2_text + ", ep_service_cert3="

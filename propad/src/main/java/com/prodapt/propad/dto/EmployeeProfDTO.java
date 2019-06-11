@@ -21,13 +21,7 @@ public int getIe_id() {
 		public void setIe_id(int ie_id) {
 			this.ie_id = ie_id;
 		}
-		private String camera_file;
-		public String getCamera_file() {
-				return camera_file;
-			}
-			public void setCamera_file(String camera_file) {
-				this.camera_file = camera_file;
-			}
+	
 		//		private int ep_emp_id;
 		private byte[] ep_service_cert1;
 		private String ep_service_cert1_text;
