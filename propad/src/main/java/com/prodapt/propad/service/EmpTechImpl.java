@@ -36,12 +36,6 @@ public EmpTechImpl(EmpTechRepository empTechRepository) {
 	}
 
 
-//	@Override
-//	public List<PropadEmpTechDetails> getAll(int emp_id) {
-//		// TODO Auto-generated method stub
-//		return (List<PropadEmpTechDetails>) empTechRepository.getOne(emp_id);
-//	}
-
 
 	@Override
 	public List<PropadEmpTechDetails> getOneRow(String et_emp_mail) {

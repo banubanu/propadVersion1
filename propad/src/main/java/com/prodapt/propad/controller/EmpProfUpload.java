@@ -49,8 +49,7 @@ public class EmpProfUpload {
 	EmpProf empProf;
 	@Autowired
 	EmpProfRepository empProfRepository;
-	@Value("${application.base.media}")
-    private String storagePath;
+	
 
 	
 	public EmpProfUpload(EmpProf empProf)
