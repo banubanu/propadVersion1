@@ -4,6 +4,9 @@ import java.sql.Date;
 
 public class FormFEmployeeDTO {
 	private int ff_employee_id;
+	private int ff_emp_name;
+	private int ff_emp_sex;
+	
 	private String ff_emp_religion;
 	private String ff_emp_marital_status;
 	private String ff_emp_dept;
@@ -27,6 +30,19 @@ public class FormFEmployeeDTO {
 	}
 	public void setFf_employee_id(int ff_employee_id) {
 		this.ff_employee_id = ff_employee_id;
+	}
+	
+	public int getFf_emp_name() {
+		return ff_emp_name;
+	}
+	public void setFf_emp_name(int ff_emp_name) {
+		this.ff_emp_name = ff_emp_name;
+	}
+	public int getFf_emp_sex() {
+		return ff_emp_sex;
+	}
+	public void setFf_emp_sex(int ff_emp_sex) {
+		this.ff_emp_sex = ff_emp_sex;
 	}
 
 	public String getFf_emp_religion() {
